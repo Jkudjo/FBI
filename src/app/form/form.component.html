@@ -1,0 +1,37 @@
+<div class="container">
+  <img src="assets/cloud.jpg" style="text-align:center; width:100px; border-radius:50px">
+  <h1> User Registration</h1>
+  <form #login="ngForm"  (ngSubmit) ="submit(login)">
+      <div class = "form-group"> 
+          <label for="Firstname"> First Name </label> <br>
+          <input name="ngModel" required minlength="2" maxlength="7"  type="text" name ="Firstname"  class="form-control" ngModel> 
+          <div *ngif = "name.touched && name.invalid" class="alert alert-danger">Invalid!</div>
+      </div> 
+      <pre></pre>
+ 
+      <div class = "form-group">
+        <label for="Lastname">Last Name </label> <br>
+        <input type="text" name ="Firstname" class="form-control" ngModel> 
+      </div>
+      <pre></pre>
+
+    <div class = "form-group">
+      <label for="email"> Email </label> <br>
+      <input type="text" name ="Firstname" class="form-control" ngModel> 
+    </div>
+    <pre></pre>
+
+    <div class = "form-group">
+      <label for="password"> Password </label> <br>
+      <input type="text" name ="Firstname" class="form-control" ngModel> 
+    </div>
+    <pre></pre>
+    <button claass="btn btn-primary" type="submit"> Submit</button>
+
+  </form>
+
+  
+
+
+</div>
+
